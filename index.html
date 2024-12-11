@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="./Copilot.ico" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Copilot - Ancienne Version</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 10px 0 20px;
+        }
+        .loading-bar-container {
+            position: relative;
+            width: 100%;
+            height: 3px;
+            margin: 0 auto;
+            background: #e0e0e0;
+            border-radius: 1px;
+            overflow: hidden;
+        }
+        .loading-bar {
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #0078D7, #00C853);
+            animation: load 1s linear forwards;
+        }
+        @keyframes load {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Copilot.ico" alt="Microsoft Copilot Logo" class="logo">
+        <h1>Microsoft Edge Copilot</h1>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <p>Loading...</p>
+    </div>
+
+    <script>
+        // Redirection après 3 secondes
+        setTimeout(function() {
+            window.location.href = "https://edgeservices.bing.com/edgesvc/chat?udsframed=1&form=SHORUN&clientscopes=chat,noheader,udsedgeshop,channelstable,ntpquery,devtoolsapi,udsinwin11,udsdlpconsent,udsmrefresh,cspgrd,&shellsig=75a5ef171171a78a0599470e19cd73486fce3215&setlang=1&udsps=0&udspp=0Origin"; // Remplacez l'URL ici pour Light ou Dark Mode
+        }, 1000);
+    </script>
+</body>
+</html>
